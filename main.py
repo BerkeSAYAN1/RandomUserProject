@@ -14,7 +14,7 @@ for i in range(num):
     word1 = random.choice(text)
     word2 = random.choice(text)
     #check if word2 is censored
-    if word2 in censored | word1 in censored:
+    if (word2 in censored) | (word1 in censored):
         i -=1
         continue
     elif i == -1:
